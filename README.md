@@ -1,2 +1,6 @@
-# ImageProcessing
- Math, project 2
+# Project 2: ImageProcessing
+
+## Brightness adjustment
+
+## Contrast adjustment
+
