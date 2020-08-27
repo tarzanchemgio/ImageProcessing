@@ -12,7 +12,7 @@ def adjust_contrast(img_1d, amount):
 
 
 def main():
-    img = imageToArray('samples/sample.png')
+    img = imageToRGBArray('samples/sample.png')
     contrastAmount = 128
     newImg = adjust_contrast(np.reshape(img, (-1, 3)), contrastAmount)
     newImg = np.reshape(newImg, img.shape)

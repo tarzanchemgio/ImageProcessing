@@ -1,9 +1,4 @@
-import random
-
-from PIL import Image
-import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 from common import *
 
 
@@ -16,7 +11,7 @@ def change_brightness(img_1d, amount):
 
 
 def main():
-    img = imageToArray('samples/sample.png')
+    img = imageToRGBArray('samples/sample.png')
     deltaBrightness = 200
     newImg = change_brightness(np.reshape(img, (-1, 3)), deltaBrightness)
     newImg = np.reshape(newImg, img.shape)

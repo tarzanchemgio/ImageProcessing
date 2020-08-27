@@ -2,12 +2,17 @@ from PIL import Image
 import numpy as np
 
 
-def imageToArray(path):
+def imageToRGBArray(path):
     """
 
     :return: np array with shape (numberOfPixel, 3)
     """
     img = Image.open(path).convert('RGB')
+    return np.array(img)
+
+
+def imageToGrayScaleArray(path):
+    img = Image.open(path).convert('LA').convert('RGB')
     return np.array(img)
 
 
